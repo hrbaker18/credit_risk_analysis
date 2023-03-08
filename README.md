@@ -6,7 +6,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 
 ## Results
 
-<b> Naive Random Oversampling </b>
+### Naive Random Oversampling
 
 ![oversampling](img/oversampling.png)
 
@@ -14,7 +14,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.01; Low Risk = 1.00
 3. Recall: High Risk= 0.63; Low Risk = 0.67
 
-<b> SMOTE Oversampling </b>
+### SMOTE Oversampling
 
 ![smote](img/smote.png)
 
@@ -22,7 +22,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.01; Low Risk = 1.00
 3. Recall: High Risk= 0.64; Low Risk = 0.66
 
-<b> Undersampling </b>
+### Undersampling 
 
 ![undersampling](img/undersampling.png)
 
@@ -30,7 +30,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.01; Low Risk = 1.00
 3. Recall: High Risk= 0.56; Low Risk = 0.47
 
-<b> Combination (Over and Under) Sampling </b>
+### Combination (Over and Under) Sampling 
 
 ![SMOTEENN](img/SMOTEENN.png)
 
@@ -38,7 +38,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.01; Low Risk = 1.00
 3. Recall: High Risk= 0.69; Low Risk = 0.60
 
-<b> Balanced Random Forest Classifier </b>
+### Balanced Random Forest Classifier 
 
 ![random_forest](img/random_forest.png)
 
@@ -46,7 +46,7 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.04; Low Risk = 1.00
 3. Recall: High Risk= 0.67; Low Risk = 0.91
 
-<b> Easy Ensemble AdaBoost Classifier </b>
+### Easy Ensemble AdaBoost Classifier 
 
 ![adaboost](img/adaboost.png)
 
@@ -54,5 +54,8 @@ The purpose of this analysis is to look at data from LendingClub, a peer-to-peer
 2. Precision: High Risk= 0.07; Low Risk = 1.00
 3. Recall: High Risk= 0.91; Low Risk = 0.94
 
-## Analysis
+## Summary
 
+Looking at all the models used the Easy Ensemble AdaBoost Classifier yielded the best results. At a .93 accuracy score, and an average overall .94 recall rating, it had the best results of any of the models tested. Looking more specifically at the "High Risk" results, this model had the highest precision of .07, and the highest recall score of .91, contributing to the F1 score of .14. 
+
+Based on the data used from LendingClub and the results of the analysis, if a machine learning model needed to be used to predict credit card risk, the Easy Ensemble AdaBoost Classifier model would be the one to use moving forward.
